@@ -69,3 +69,13 @@
 <ng-template #notShowBlock>
   <p>ini not show block</p>
 </ng-template>
+
+
+<!-- INPUT -->
+<p>
+  <input [(ngModel)]= "isi_a" type="text"/> *
+  <input [(ngModel)]= "isi_b" type="text"/> = {{isi_a*isi_b}}
+</p>
+
+<button (click)="KlikButton()">Tekan</button>
+{{Pesan}}

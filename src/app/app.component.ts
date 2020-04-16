@@ -42,5 +42,10 @@ export class AppComponent  { // bentui nya json
     umur: 20
   };
 
+  Pesan = "";
+  KlikButton(){
+    this.Pesan = "Tombol di tekan"; // memangil variabel harus dengan this
+  }
+
   
 }
