@@ -29,5 +29,18 @@ export class AppComponent  { // bentui nya json
   // Arry tidak harus bentuk json
   itemArr= [1,2,3,4];
 
-  show: boolean = true; // cara mendeklerasikan variable formatnnya= nama_variable: tipe_data = isi_variable;
+  // cara mendeklerasikan variable formatnnya= nama_variable: tipe_data = isi_variable;
+  show: boolean = false; 
+
+  a: boolean = true; 
+  b: boolean = false; 
+
+  use = "hai" ; // kalau tak kosongi isinya gk kluar
+
+  user = {
+    nama: "ivana",
+    umur: 20
+  };
+
+  
 }

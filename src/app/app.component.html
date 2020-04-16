@@ -37,3 +37,35 @@
   Tampilkan isi
 </p>
 
+<p *ngIf="a != b">
+  Tampilkan isi !- or ==
+</p>
+
+<p *ngIf="a && b">
+  Tampilkan isi &&
+</p>
+
+<p *ngIf="a || b">
+  Tampilkan isi ||
+</p>
+
+<p *ngIf="use">
+  Tampilkan isi user
+</p>
+
+<p *ngIf="user.nama">
+  nama user: {{user.nama}}
+</p>
+
+<!-- IF ELSE -->
+<ng-template
+*ngIf="show;then showBlock; else notShowBlock"> <!-- format variblenya;then variableBaru_untukThen; else variableBaru_untukElse -->
+</ng-template>
+
+<ng-template #showBlock>
+  <p>ini show block</p>
+</ng-template>
+
+<ng-template #notShowBlock>
+  <p>ini not show block</p>
+</ng-template>
