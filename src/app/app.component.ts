@@ -13,7 +13,7 @@ export class AppComponent  { // bentui nya json
   item = {
     nama: "Buah Kelengkeng",
     harga : 10000
-  }
+  };
 
   items = [
     {
@@ -24,8 +24,10 @@ export class AppComponent  { // bentui nya json
       nama: "Buah Appel",
       harga: 5000
     }
-  ]
+  ];
 
   // Arry tidak harus bentuk json
   itemArr= [1,2,3,4];
+
+  show: boolean = true; // cara mendeklerasikan variable formatnnya= nama_variable: tipe_data = isi_variable;
 }

@@ -10,7 +10,7 @@
   {{"contoh awal"}}
 
   <br><br>
-  
+
   25+25 = {{25+25}}
 </p>
 
@@ -28,6 +28,12 @@
 
 <br><br>
 
-<div *ngFor = "let data of itemArr">
- {{data}}
+<!-- engk nge otomatis new line tapi nge loop divnya -->
+<div *ngFor = "let data of itemArr"> <!-- ngFor wajib di dalam tag , tidak bisa diluar tag -->
+ isi = {{data}}
 </div>
+
+<p *ngIf="show">
+  Tampilkan isi
+</p>
+
