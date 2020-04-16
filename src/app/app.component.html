@@ -1,4 +1,33 @@
 <hello name="{{ name }}"></hello>
 <p>
   Start editing to see some magic happen :)
+
+  <br>
+
+  <!-- {{}} untuk menulis sebuah variable  , tipe data otomatis-->
+  <!-- Variable dan Logika ditulis atau di iniialisasi di file dengn format .ts -->
+   <!-- didalam "" menandkaan teks , kalau engk dianggap variabel-->
+  {{"contoh awal"}}
+
+  <br><br>
+  
+  25+25 = {{25+25}}
 </p>
+
+<p>
+  <!-- https://angular.io/guide/pipes -->
+    {{item.nama}} - {{item.harga | currency:'Rp'}}
+</p>
+
+
+<!-- Array -->
+<!-- let buah -- buah itu nama variabel yang diisi dengan variable bernama items -->
+<div *ngFor = "let buah of items; let i=index">  <!-- *ng itu identitas untuk angular , For itu berarti loop nya, let itu kayak var di javascript , di htmlnnya pakai let , nanti di .ts pakai var bisa, pakai ; untuk membuat varibale lain  -->
+ {{i+1}}. {{buah.nama}} - {{buah.harga | currency:'Rp'}} <!-- pakai variable buah karna sudadh di let -->
+</div>
+
+<br><br>
+
+<div *ngFor = "let data of itemArr">
+ {{data}}
+</div>
